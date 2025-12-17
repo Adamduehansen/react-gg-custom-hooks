@@ -7,4 +7,5 @@ export default [
   route("use-toggle", "routes/use-toggle.tsx"),
   route("use-previous", "routes/use-previous.tsx"),
   route("use-preferred-language", "routes/use-preferred-language.tsx"),
+  route("use-favicon", "routes/use-favicon.tsx"),
 ] satisfies RouteConfig;
