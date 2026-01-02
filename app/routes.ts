@@ -8,4 +8,5 @@ export default [
   route("use-previous", "routes/use-previous.tsx"),
   route("use-preferred-language", "routes/use-preferred-language.tsx"),
   route("use-favicon", "routes/use-favicon.tsx"),
+  route("use-copy-to-clipboard", "routes/use-copy-to-clipboard.tsx"),
 ] satisfies RouteConfig;
