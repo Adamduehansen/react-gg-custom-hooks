@@ -14,4 +14,5 @@ export default [
   route("use-lock-body-scroll", "routes/use-lock-body-scroll.tsx"),
   route("use-queue", "routes/use-queue.tsx"),
   route("use-timeout", "routes/use-timeout.tsx"),
+  route("use-window-size", "routes/use-window-size.tsx"),
 ] satisfies RouteConfig;
