@@ -11,4 +11,6 @@ export default [
   route("use-copy-to-clipboard", "routes/use-copy-to-clipboard.tsx"),
   route("use-interval", "routes/use-interval.tsx"),
   route("use-counter", "routes/use-counter.tsx"),
+  route("use-lock-body-scroll", "routes/use-lock-body-scroll.tsx"),
+  route("use-queue", "routes/use-queue.tsx"),
 ] satisfies RouteConfig;
