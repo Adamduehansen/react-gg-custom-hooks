@@ -15,4 +15,5 @@ export default [
   route("use-queue", "routes/use-queue.tsx"),
   route("use-timeout", "routes/use-timeout.tsx"),
   route("use-window-size", "routes/use-window-size.tsx"),
+  route("use-visibility-change", "routes/use-visibility-change.tsx"),
 ] satisfies RouteConfig;
