@@ -16,4 +16,5 @@ export default [
   route("use-timeout", "routes/use-timeout.tsx"),
   route("use-window-size", "routes/use-window-size.tsx"),
   route("use-visibility-change", "routes/use-visibility-change.tsx"),
+  route("use-list", "routes/use-list.tsx"),
 ] satisfies RouteConfig;
