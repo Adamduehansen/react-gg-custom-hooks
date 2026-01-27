@@ -17,4 +17,5 @@ export default [
   route("use-window-size", "routes/use-window-size.tsx"),
   route("use-visibility-change", "routes/use-visibility-change.tsx"),
   route("use-list", "routes/use-list.tsx"),
+  route("use-object-state", "routes/use-object-state.tsx"),
 ] satisfies RouteConfig;
