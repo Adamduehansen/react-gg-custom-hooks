@@ -18,4 +18,5 @@ export default [
   route("use-visibility-change", "routes/use-visibility-change.tsx"),
   route("use-list", "routes/use-list.tsx"),
   route("use-object-state", "routes/use-object-state.tsx"),
+  route("use-debounce", "routes/use-debounce.tsx"),
 ] satisfies RouteConfig;
