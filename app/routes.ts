@@ -20,4 +20,5 @@ export default [
   route("use-object-state", "routes/use-object-state.tsx"),
   route("use-debounce", "routes/use-debounce.tsx"),
   route("use-continuous-retry", "routes/use-continuous-retry.tsx"),
+  route("use-history-state", "routes/use-history-state.tsx"),
 ] satisfies RouteConfig;
