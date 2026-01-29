@@ -22,4 +22,5 @@ export default [
   route("use-continuous-retry", "routes/use-continuous-retry.tsx"),
   route("use-history-state", "routes/use-history-state.tsx"),
   route("use-random-interval", "routes/use-random-interval.tsx"),
+  route("use-media-query", "routes/use-media-query.tsx"),
 ] satisfies RouteConfig;

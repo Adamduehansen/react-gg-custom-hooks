@@ -1,0 +1,27 @@
+import useMediaQuery from "../hooks/useMediaQuery";
+
+export default function App() {
+  const isSmallDevice = useMediaQuery("only screen and (max-width : 768px)");
+  const isMediumDevice = useMediaQuery(
+    "only screen and (min-width : 769px) and (max-width : 992px)",
+  );
+  const isLargeDevice = useMediaQuery(
+    "only screen and (min-width : 993px) and (max-width : 1200px)",
+  );
+  const isExtraLargeDevice = useMediaQuery(
+    "only screen and (min-width : 1201px)",
+  );
+
+  return (
+    <section>
+      <h1>useMediaQuery</h1>
+      Resize your browser windows to see changes.
+      <article>
+        {isSmallDevice ? <div>"Small"</div> : null}
+        {isMediumDevice ? <div>"Medium"</div> : null}
+        {isLargeDevice ? <div>"Large"</div> : null}
+        {isExtraLargeDevice ? <div>"Extra Large"</div> : null}
+      </article>
+    </section>
+  );
+}
