@@ -21,4 +21,5 @@ export default [
   route("use-debounce", "routes/use-debounce.tsx"),
   route("use-continuous-retry", "routes/use-continuous-retry.tsx"),
   route("use-history-state", "routes/use-history-state.tsx"),
+  route("use-random-interval", "routes/use-random-interval.tsx"),
 ] satisfies RouteConfig;
