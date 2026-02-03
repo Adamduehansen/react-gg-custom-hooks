@@ -23,5 +23,5 @@ export default [
   route("use-history-state", "routes/use-history-state.tsx"),
   route("use-random-interval", "routes/use-random-interval.tsx"),
   route("use-media-query", "routes/use-media-query.tsx"),
-  route("use-interval-when", "routes/use-interval-when.tsx"),
+  route("use-mouse", "routes/use-mouse.tsx"),
 ] satisfies RouteConfig;
