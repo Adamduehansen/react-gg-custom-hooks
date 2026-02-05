@@ -24,4 +24,5 @@ export default [
   route("use-random-interval", "routes/use-random-interval.tsx"),
   route("use-media-query", "routes/use-media-query.tsx"),
   route("use-mouse", "routes/use-mouse.tsx"),
+  route("use-window-scroll", "routes/use-window-scroll.tsx"),
 ] satisfies RouteConfig;
