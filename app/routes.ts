@@ -25,4 +25,5 @@ export default [
   route("use-media-query", "routes/use-media-query.tsx"),
   route("use-mouse", "routes/use-mouse.tsx"),
   route("use-window-scroll", "routes/use-window-scroll.tsx"),
+  route("use-logger", "routes/use-logger.tsx"),
 ] satisfies RouteConfig;
