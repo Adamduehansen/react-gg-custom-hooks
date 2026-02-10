@@ -27,4 +27,5 @@ export default [
   route("use-window-scroll", "routes/use-window-scroll.tsx"),
   route("use-logger", "routes/use-logger.tsx"),
   route("use-orientation", "routes/use-orientation.tsx"),
+  route("use-battery", "routes/use-battery.tsx"),
 ] satisfies RouteConfig;
