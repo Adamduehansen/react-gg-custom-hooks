@@ -26,4 +26,5 @@ export default [
   route("use-mouse", "routes/use-mouse.tsx"),
   route("use-window-scroll", "routes/use-window-scroll.tsx"),
   route("use-logger", "routes/use-logger.tsx"),
+  route("use-orientation", "routes/use-orientation.tsx"),
 ] satisfies RouteConfig;
