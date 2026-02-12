@@ -28,4 +28,5 @@ export default [
   route("use-logger", "routes/use-logger.tsx"),
   route("use-orientation", "routes/use-orientation.tsx"),
   route("use-battery", "routes/use-battery.tsx"),
+  route("use-throttle", "routes/use-throttle.tsx"),
 ] satisfies RouteConfig;
