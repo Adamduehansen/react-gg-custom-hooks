@@ -29,4 +29,5 @@ export default [
   route("use-orientation", "routes/use-orientation.tsx"),
   route("use-battery", "routes/use-battery.tsx"),
   route("use-throttle", "routes/use-throttle.tsx"),
+  route("use-fetch", "routes/use-fetch.tsx"),
 ] satisfies RouteConfig;
