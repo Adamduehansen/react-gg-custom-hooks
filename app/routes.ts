@@ -30,4 +30,5 @@ export default [
   route("use-battery", "routes/use-battery.tsx"),
   route("use-throttle", "routes/use-throttle.tsx"),
   route("use-fetch", "routes/use-fetch.tsx"),
+  route("use-countdown", "routes/use-countdown.tsx"),
 ] satisfies RouteConfig;
