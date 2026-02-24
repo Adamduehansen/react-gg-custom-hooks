@@ -30,38 +30,7 @@ export default function useGeolocation(options = {}) {
 
   React.useEffect(() => {
     if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(
-        (position) => {
-          setState({
-            loading: false,
-            accuracy: position.coords.accuracy,
-            altitude: position.coords.altitude,
-            altitudeAccuracy: position.coords.altitudeAccuracy,
-            heading: position.coords.heading,
-            latitude: position.coords.latitude,
-            longitude: position.coords.longitude,
-            speed: position.coords.speed,
-            timestamp: position.timestamp,
-            error: null,
-          });
-        },
-        (error) => {
-          setState({
-            loading: false,
-            accuracy: null,
-            altitude: null,
-            altitudeAccuracy: null,
-            heading: null,
-            latitude: null,
-            longitude: null,
-            speed: null,
-            timestamp: null,
-            error: error,
-          });
-        },
-      );
-
-      watchId.current = navigator.geolocation.watchPosition((position) => {
+      function successHandler(position: GeolocationPosition) {
         setState({
           loading: false,
           accuracy: position.coords.accuracy,
@@ -74,7 +43,8 @@ export default function useGeolocation(options = {}) {
           timestamp: position.timestamp,
           error: null,
         });
-      }, (error) => {
+      }
+      function errorHandler(error: GeolocationPositionError) {
         setState({
           loading: false,
           accuracy: null,
@@ -87,7 +57,17 @@ export default function useGeolocation(options = {}) {
           timestamp: null,
           error: error,
         });
-      });
+      }
+
+      navigator.geolocation.getCurrentPosition(
+        successHandler,
+        errorHandler,
+      );
+
+      watchId.current = navigator.geolocation.watchPosition(
+        successHandler,
+        errorHandler,
+      );
 
       return function () {
         navigator.geolocation.clearWatch(watchId.current);
