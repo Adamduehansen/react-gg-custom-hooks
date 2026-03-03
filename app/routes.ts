@@ -32,4 +32,5 @@ export default [
   route("use-fetch", "routes/use-fetch.tsx"),
   route("use-countdown", "routes/use-countdown.tsx"),
   route("use-geolocation", "routes/use-geolocation.tsx"),
+  route("use-network-state", "routes/use-network-state.tsx"),
 ] satisfies RouteConfig;
